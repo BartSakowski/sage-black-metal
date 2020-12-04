@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
+
+/* Theme Colors */
+/* 
+  Primary: #333
+  Button Primary: #6c9171
+  Darker Button: #3F8A77
+  Tan: #ADA26F
+  Harvest Gold: #C98702*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'IM Fell English', serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  background-color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.mobile {
+  display: none;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #323232;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  overflow: auto;
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: #6c9171 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  height: auto;
+  width: auto;
+  max-height: 70px;
+  max-width: 100%;
+}
+
+/* Header */
+.hero {
+  background: url('../images/herobackground.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+  text-shadow: 4px 4px #111111;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba( 0, 0, 0, 0.6)
+}
+
+.hero * {
+  z-index: 10;
+}
+
+/* About */
+
+.about {
+  background-color: black;
+}
+
+.about img {
+  opacity: 0.6;
+}
+
+.about h2 {
+  color: black;
+}
+
+.about p {
+  color: black;
+  line-height: 1.4;
+}
+
+/* Music */
+
+#music {
+  background-color: #333;
+  color: #fff
+}
+
+#music h2{
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 30px 10px;
+}
+
+#music .song {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+
+
+}
+/* Photos */
+
+.photos *{
+  padding: 0;
+  margin: 0;
+  background-color: #6c9171;
+  color: #fff;
+
+}
+
+.photos .row {
+  display: flex;
+  width: 100vh;
+  height: 100vh;
+}
+
+.photos img {
+  display: flex;
+  width: 50.34vh;
+  padding: 5px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover{
+  color: #6c9171;
+}
+
+.footer .social > * {
+  margin-right: 30px;
+}
+
+@media(max-width: 1024px) {
+  .navbar{
+    width: 100vw;
+    flex-direction: column;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .mobile {
+    display: flex;
+  }
+  
+  .no-mobile {
+    display: none;
+  }
+
+  .flex-columns .column .column-2 {
+    display: flex;
+  }
+
+  .flex-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #music.mobile{
+    flex-direction: column;
+  }
+
+  #music h2 {
+    padding-bottom: 0px;
+  }
+
+  #music h4{
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer {
+    width: 100vw;
+  }
+  
+
+}
