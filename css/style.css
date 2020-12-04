@@ -203,8 +203,8 @@ a {
   color: #6c9171;
 }
 
-.footer .social > * {
-  margin-right: 30px;
+.footer .social a {
+  margin: 0 10px;
 }
 
 @media(max-width: 1024px) {
